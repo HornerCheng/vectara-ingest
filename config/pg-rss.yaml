@@ -1,13 +1,13 @@
 vectara:
-  corpus_id: 152
-  customer_id: 1526022105
+  corpus_id: 2
+  customer_id: 4125392970
   reindex: false
 
 crawling:
   crawler_type: rss
 
 rss_crawler:
-  source: bbc
+  source: pg
   rss_pages: [
     "http://feeds.bbci.co.uk/news/rss.xml", "http://feeds.bbci.co.uk/news/world/rss.xml", "http://feeds.bbci.co.uk/news/uk/rss.xml",
     "http://feeds.bbci.co.uk/news/business/rss.xml", "http://feeds.bbci.co.uk/news/politics/rss.xml", 
@@ -15,8 +15,8 @@ rss_crawler:
     "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "http://feeds.bbci.co.uk/news/technology/rss.xml", 
     "http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml", "http://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
     "http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml", "http://feeds.bbci.co.uk/news/world/asia/rss.xml",
-    "http://feeds.bbci.co.uk/news/world/europe/rss.xml"
+    "http://feeds.bbci.co.uk/news/world/europe/rss.xml","http://www.aaronsw.com/2002/feeds/pgessays.rss"
   ]
-  days_past: 30
+  days_past: 365
   delay: 1
   extraction: playwright           # pdf or playwright
